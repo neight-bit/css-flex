@@ -7,6 +7,28 @@ body {
     color: #5f84b3;
   }
 
+button {
+	background-color:#599bb3;
+	border-radius:8px;
+	color:#ffffff;
+	font-size:18px;
+	font-weight:bold;
+	padding: 10px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    display: flex;
+    margin: 10px;
+    list-style-type: none;
+}
+
 .header, .footer {
     display: flex;
     justify-content: space-between;
@@ -24,7 +46,7 @@ body {
 
 .header {
     font-size: 24px;
-    border-bottom: 1px solid #5f84b3;
+    border-bottom: 3px solid #101111;
 }
 
 .section {
@@ -37,14 +59,36 @@ body {
 
 .one {
     background-color: #21243d;
+    display: flex;
+
+}
+.left {
+    border: 2px solid white;
+    width: 400px;
+    height: 200px;
+    margin: 10px;
 }
 
+.right {
+    border: 2px solid white;
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+}
+
+/* .row {
+    display: flex;
+    flex-direction: row;
+} */
+
 .two {
-    background-color: #21243d;
+    flex-direction: column;
+    background-color: #333751;
 }
 
 .three {
-    background-color: #21243d;
+    color: #1e2032;
+    background-color: #636b90;
 }
 
 .four {
