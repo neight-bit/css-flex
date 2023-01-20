@@ -38,7 +38,7 @@ li {
     font-weight: bolder;
 }
 
-.container {
+.main{
     display: flex;
     flex: auto;
     flex-direction: column;
@@ -76,14 +76,22 @@ li {
     margin: 10px;
 }
 
-/* .row {
-    display: flex;
-    flex-direction: row;
-} */
-
 .two {
     flex-direction: column;
     background-color: #333751;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.pic {
+    /* this will need to be broken out into seperate selectors */
+    border: 2px solid white;
+    width: 200px;
+    height: 300px;
 }
 
 .three {
@@ -92,7 +100,24 @@ li {
 }
 
 .four {
-    background-color: #21243d;
+    background-color: #333751;
+}
+
+.synth {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #1e2030;
+    width: 1000px;
+    height: 150px;
+    border-radius: 8px;
+}
+
+.container p{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 4px;
+    font-weight: 700;
 }
 
 .footer {
