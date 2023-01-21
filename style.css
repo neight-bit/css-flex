@@ -8,9 +8,9 @@ body {
   }
 
 button {
-	background-color:#599bb3;
+	background-color:#5f84b3;
 	border-radius:8px;
-	color:#ffffff;
+	color:#1e2030;
 	font-size:18px;
 	font-weight:bold;
 	padding: 10px 32px;
@@ -29,6 +29,10 @@ li {
     list-style-type: none;
 }
 
+img {
+    border-radius: 8px;
+}
+
 .header, .footer {
     display: flex;
     justify-content: space-between;
@@ -45,7 +49,9 @@ li {
 }
 
 .header {
+    color: #86e1fc;
     font-size: 24px;
+    font-weight: 900;
     border-bottom: 3px solid #101111;
 }
 
@@ -62,18 +68,16 @@ li {
     display: flex;
 
 }
-.left {
-    border: 2px solid white;
-    width: 400px;
-    height: 200px;
-    margin: 10px;
+.left, .right {
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.right {
-    border: 2px solid white;
-    width: 400px;
-    height: 200px;
-    margin: 10px;
+.left {
+    flex-shrink: 1;
 }
 
 .two {
@@ -84,23 +88,21 @@ li {
 .gallery {
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    flex-wrap: wrap;
+    gap: 66px;
 }
 
 .pic {
-    /* this will need to be broken out into seperate selectors */
-    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
     width: 200px;
-    height: 300px;
+    align-items: center;
+    font-size: 24px;
+    color:#b893f5
 }
 
 .three {
-    color: #1e2032;
-    background-color: #636b90;
-}
-
-.four {
-    background-color: #333751;
+    background-color: #21243d;
 }
 
 .synth {
@@ -123,4 +125,12 @@ li {
 .footer {
     border-top: 1px solid #5f84b3;
     font-size: 18px;
+}
+
+.footer a:link {
+    color: #bddb70;
+}
+
+.footer a:visited {
+    color: #5c78f8;
 }
