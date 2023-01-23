@@ -82,7 +82,10 @@ img {
 
 .two {
     flex-direction: column;
-    background-color: #333751;
+    background-color: #21243d;
+    border-top: 5px solid #333751;
+    border-bottom: 5px solid #333751;
+    /* background-color: #333751; */
 }
 
 .gallery {
